@@ -1,5 +1,106 @@
-.banner{
+.banner {
 	position: relative;
-	
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Arial', sans-serif;
 }
 
+.banner__imagen {
+	background: url("../../assets/img/banner.png") no-repeat center/cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	
+	
+}
+.banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Ajustá el 0.3 según el nivel deseado */
+  z-index: 2;
+}
+
+.banner__contenido {
+	position: relative;
+	z-index: 3;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+}
+
+.banner__titulo {
+	font-family: Pacifico, cursive;
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.banner__titulo .resaltado {
+	display: block;
+	background: linear-gradient(to right, #4ade80, #facc15);
+	/* verde a amarillo */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}
+
+.banner__descripcion {
+	font-size: 1.5rem;
+	color: #d1d5db;
+	margin-bottom: 2rem;
+	font-weight: 700;
+}
+
+.banner__botones {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn-principal {
+	background: linear-gradient(to right, #16a34a, #15803d);
+	color: white;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 9999px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-principal:hover {
+	background: linear-gradient(to right, #15803d, #166534);
+	transform: scale(1.05);
+}
+
+.btn-secundario {
+	background: transparent;
+	border: 2px solid white;
+	color: white;
+	padding: 1rem 2rem;
+	border-radius: 9999px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn-secundario:hover {
+	background: white;
+	color: #111827;
+}

@@ -1,29 +1,70 @@
-.recetas{
-	background: #dab997;
-	display: flex;
-	flex-wrap: wrap;
-	
-	
-
+.recetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fffbeb;
 }
 
-@media screen and (min-width: 0){
-	.recetas{
-	padding: 5rem 0 0 1rem;
-
-	}
+.receta {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 768px){
-	.recetas{
-	padding: 5rem 0 0 2.5rem;
-
-	}
+.receta__imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-@media screen and (min-width: 992px){
-	.recetas{
-	padding: 5rem 0 0 5rem;
-
-	}
+.receta__contenido {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.receta__titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.receta__descripcion {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.receta__boton {
+  background-color: #F16821;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.receta__boton:hover {
+  background-color: #d95614;
+}
+
+@media screen and (max-width: 992px) {
+  .recetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recetas {
+    grid-template-columns: 1fr;
+  }
+}
+

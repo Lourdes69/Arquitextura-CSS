@@ -1,26 +1,19 @@
-.persona__imagen{
-height: 300px;
-width: 300px;
-margin: 0 auto;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 100%;
-}
-/*aca se usa el modificador para subir la foto*/
-.persona__imagen--roberta{
+
+
+ .persona__imagen--roberta{
 background-image: url(../../img/personas/roberta.jpg);
-ba
+background-size: cover;
 }
 
 
 .persona__imagen--marcela{
 background-image: url(../../img/personas/marcela.jpg);
+background-size: cover;
 
 }
 
 
 .persona__imagen--andreia{
 background-image: url(../../img/personas/andrea.jpg);
-
-}
+background-size: cover;
+}  
